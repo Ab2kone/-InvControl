@@ -11,6 +11,6 @@ public class DaoImpl implements IDao {
 
         double temp=Math.random()*40;
 
-        return 0;
+        return temp;
     }
 }

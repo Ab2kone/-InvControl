@@ -7,6 +7,17 @@ public class IMetierImpl implements IMetier {
 
     @Override
     public double calcul() {
-        return 0;
+        double tmp = dao.getData();
+        double res = tmp*540 / Math.cos(tmp*Math.PI);
+        return res;
+    }
+
+    /**
+     * Injecter dans la variable Dao un objet
+     * d'une classe qui implemente l'iterface IDao
+     * @param dao
+     */
+    public void setDao(IDao dao) {
+        this.dao = dao;
     }
 }
