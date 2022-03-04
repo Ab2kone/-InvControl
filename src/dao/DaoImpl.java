@@ -9,6 +9,7 @@ public class DaoImpl implements IDao {
          * pour récupérer la température
          */
 
+        System.out.println("Version base de données");
         double temp=Math.random()*40;
 
         return temp;
